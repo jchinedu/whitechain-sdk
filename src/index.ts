@@ -3,6 +3,7 @@ export {
   type WhiteChainClient,
 } from './client.js'
 export { formatUnits, parseUnits } from './utils/math.js'
+export { toChecksumAddress, isAddress, assertChecksumAddress } from './utils/address.js'
 export * from './constants.js'
 export * from './config/networks.js'
 export * from './network/provider.js'
@@ -30,6 +31,7 @@ export type {
 
 export { TODO } from './types.js'
 export * from './errors/index.js'
+export * from './storage/index.js'
 
 export {
   Eip1193Provider,
