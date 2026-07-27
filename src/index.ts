@@ -7,6 +7,8 @@ export * from './constants.js'
 export * from './config/networks.js'
 export * from './network/provider.js'
 export * from './network/BatchProvider.js'
+export { Contract } from './core/Contract.js'
+export { AbiCache, abiCache } from './core/AbiCache.js'
 
 export type {
   WhiteChainConfig,
@@ -26,7 +28,8 @@ export type {
   Milestone,
 } from './types.js'
 
-export { WhiteChainError, TODO } from './types.js'
+export { TODO } from './types.js'
+export * from './errors/index.js'
 
 export {
   Eip1193Provider,
@@ -39,3 +42,8 @@ export {
   IpcProvider,
   type IpcProviderOptions,
 } from './providers/IpcProvider.js'
+
+export {
+  MockProvider,
+  returns,
+} from './testing/MockProvider.js'
